@@ -3,3 +3,13 @@
 df['date']가 datetime이고 시간까지 있는 경우  
 
 df['date'].strftime('%Y-%m-%d')
+
+
+2.날짜 자르기
+
+df['date']가 datetime이고 시간까지 있는 경우  
+
+df = df.set_index('date')
+df.index.date
+
+인덱스에 넣고 date 메소드 쓰면 일까지 나옴
