@@ -1,0 +1,5 @@
+1. 날짜 자르기
+
+df['date']가 datetime이고 시간까지 있는 경우  
+
+df['date'].strftime('%Y-%m-%d')
